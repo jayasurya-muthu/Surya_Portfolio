@@ -1,0 +1,61 @@
+:root{
+
+--bg:#f7f7fb;
+--card:#ffffff;
+--text:#111827;
+--primary:#2563eb;
+--secondary:#7c3aed;
+
+}
+
+body{
+
+background:var(--bg);
+color:var(--text);
+transition:.4s;
+
+}
+
+body.dark{
+
+--bg:#0f172a;
+--card:#1e293b;
+--text:#f8fafc;
+--primary:#60a5fa;
+--secondary:#8b5cf6;
+
+}
+
+.theme-btn{
+
+width:45px;
+height:45px;
+border:none;
+border-radius:50%;
+cursor:pointer;
+font-size:20px;
+background:var(--card);
+color:var(--primary);
+box-shadow:0 10px 20px rgba(0,0,0,.15);
+
+}
+
+.theme-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-soft);
+  background: var(--surface);
+  color: var(--amber);
+  font-size: 0.95rem;
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.theme-btn:hover {
+  border-color: var(--teal);
+  color: var(--teal);
+  transform: rotate(-12deg);
+}
